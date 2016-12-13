@@ -12,9 +12,9 @@ public class class02 {
 		 */
 		int uw,tw,h;
 		float area;
-		uw = 12;
-		tw = 7;
-		h = 9;
+		uw =Integer.parseInt(args[0]);
+		tw =Integer.parseInt(args[1]);
+		h =Integer.parseInt(args[2]);
 		area = (uw+tw)*h*0.5f;
 		System.out.printf("사다리꼴 넓이는 : %.3f",area);
 		
