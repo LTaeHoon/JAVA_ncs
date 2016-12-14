@@ -38,7 +38,30 @@ public class Step03_logical {
 		//형식2) (조건1) ? 참:(조건2)?참:거짓;
 		result1 = (age>=10&&age<=18)?"청소년":(age<10)?"유아":"성인";
 		System.out.println(result1);
+		
+		int gender;
+		String result2;
+		System.out.print("성별 입력(1~4):");
+		gender = sc.nextInt();
+		result2 = (gender==1||gender==3)?"남자":"여자";
+		System.out.printf("당신의 성별은 %s 입니다.\n",result2);
+		
+		/*
+		 * 문3) id가 "hong"이고, 비번이 "1234"이면 "로그인 성공", 아니면 "로그인 실패"를 출력하시오.
+		 * 	   <조건1>Scanner 클래스
+		 *     <조건2>3항 연산자
+		 */
+		String id, pwd, result3;
+		System.out.print("id입력:");
+		id = sc.next();
+		System.out.print("pwd입력:");
+		pwd = sc.next();
+		
+		//문자열 내용 비교 : equals() 함수 이용
+		result3 = (id.equals("hong") && pwd.equals("1234"))?"로그인 성공":"로그인 실패";
+		System.out.printf("로그인 결과 : %s\n",result3);
 		sc.close();
+		
 		
 		
 	}
