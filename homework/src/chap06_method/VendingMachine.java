@@ -1,4 +1,4 @@
-package chap06;
+package chap06_method;
 
 import java.util.Scanner;
 
@@ -17,24 +17,57 @@ public class VendingMachine {
 	다시 한번 200원을 투입하면 맥심커피, 녹차, 일반 커피, 500원을
 	투입하면 맥심커피, 녹차, 우롱차, 일반 커피가 모두 디스플레이 된다.
  */
-	public static void display(){
-		
+	public static void display(int money){
+		if(money>=500){
+			System.out.println("+++++++               구입가능한 음료                  +++++++");
+			System.out.println("1.맥심커피(200원)  2.녹차(150원)   3.우롱차(500원)  4. 일반커피(100원)");
+		}else if(money>=200){
+			System.out.println("+++++++               구입가능한 음료                  +++++++");
+			System.out.println("1.맥심커피(200원)  2.녹차(150원)  4.일반커피(100원)");
+		}else if(money>100){
+			System.out.println("+++++++               구입가능한 음료                  +++++++");
+			System.out.println("2.녹차(150원)     4.일반커피(100원)");
+		}else {
+			System.out.println("+++++++               구입가능한 음료                  +++++++");
+			System.out.println("   4.일반커피(100원)");
+			
+		}
 	}
-	public static void input(){
-		
-	}
-	public static void remain(){
+	public static void seldisplay(int bev){
 		
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
+		int money =0;
+		int bev = 0;
+		boolean flag = true;
+		boolean flag1 =true;
+		while(flag){
+			System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+			System.out.println("1.맥심커피(200원)  2.녹차(150원)  3. 우롱차(500원)   4.일반커피(100원)");
+			System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 		
-		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-		System.out.println("맥심커피(200원)  녹차(150원)   우롱차(500원)   일반커피(100원");
-		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-		System.out.println("돈을 넣으세요(1.500원,2.100원,3.50원,4.10원)");
-		
+			
+			System.out.println("돈을 넣으세요(500원,100원,50원,10원)");
+			money = sc.nextInt();
+			while(flag1){
+				System.out.println("돈을 계속 넣으실껀가요?(y/n)");
+				char yn= sc.next().charAt(0);
+				if(yn=='Y'||yn=='y'){
+					System.out.println("돈을 넣으세요(500원,100원,50원,10원)");
+					money +=sc.nextInt();
+				}else if(yn=='N'||yn=='n'){
+					flag1 = false;
+				}
+			}
+		    
+			System.out.printf("넣으신 금액은 %d 입니다.\n",money);
+			display(money);
+			System.out.print("음료를 선택하세요:");
+			bev = sc.nextInt();
+			seldisplay(bev);
+		}
 	}
 
 }
