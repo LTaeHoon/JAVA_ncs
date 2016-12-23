@@ -2,7 +2,8 @@ package sec01_Static;
 class Student{
 	String name,major; //인스턴스 멤버
 	int sno; //학번 - 20160001,20160002, ... 2016000n
-	static int number = 20160000;
+	static int number = 20160000;//클래스 멤버 초기화 (공용변수)
+	//공용변수 : 다수의 인스턴스 멤버가 참조하는 변수
 	//number = 20; -> 수정 불가능 인스턴스 초기화 블럭 바깥에서는 수정 블가
 	//1. 인스턴스 초기화 블럭 : 객체가 생성될 때마다 아래 코드 실행됨
 	{
