@@ -31,6 +31,7 @@ public class Step05_static_final {
 		int r = sc.nextInt();
 		double area = r*r*StaticD.PI;
 		System.out.println("원의 넓이 = "+area);
+		sc.close();
 	}
 
 }
