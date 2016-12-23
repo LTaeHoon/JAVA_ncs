@@ -1,8 +1,8 @@
 package sec01_Static;
 
 class StaticA{
-	int instNum; //인스턴스 멤버변수(0)
-	static int staticNum = 100; //클래스 멤버변수
+	int instNum; //인스턴스 멤버변수(0) 
+	static int staticNum = 100; //클래스 멤버변수 : 메모리에 올라갔을 때 메모리 할당 됨 (즉, 이클립스 실행 했을때, 코드를 올렸을때라고 봐도 될듯)
 	
 }
 
