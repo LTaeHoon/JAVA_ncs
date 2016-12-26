@@ -1,0 +1,10 @@
+package sec06_inter;
+
+public class Step02_interface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

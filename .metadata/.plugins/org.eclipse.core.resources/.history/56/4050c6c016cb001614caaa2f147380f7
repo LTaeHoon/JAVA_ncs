@@ -1,0 +1,22 @@
+package sec06_inter;
+abstract class SuperA{ //부모클래스
+	int num1; //멤버변수
+	int calc(){
+		num1 +=10;
+		return num1;
+	}
+}
+public class Step01_abstract {
+	/*
+	 *  추상클래스(Abstract class)
+	 *   1. 추상 메서드를 갖는 클래스
+	 *   2. 추상 메서드 : 본체가 없는 메서드
+	 *    형식) void method();
+	 *   3. abstract class 클래스명{ }
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

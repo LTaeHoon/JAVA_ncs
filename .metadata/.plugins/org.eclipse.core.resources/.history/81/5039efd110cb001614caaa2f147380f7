@@ -1,0 +1,14 @@
+package sec05_Overriding;
+
+public class Step04_casting {
+	/*
+	 * 참조변수 형변환(casting)
+	 *  - 부모클래스와 자식클래스의 참조변수 간의 형변환
+	 *  
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

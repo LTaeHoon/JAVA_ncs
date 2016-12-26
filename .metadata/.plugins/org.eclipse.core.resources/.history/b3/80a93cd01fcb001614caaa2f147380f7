@@ -1,0 +1,50 @@
+package sec06_inter;
+
+// 인터페이스 다중 상속
+interface Click{ //마우스 클릭
+	void click();
+}
+interface Pressed{ //마우스 누름
+	void pressed();
+}
+interface Change{ //상태변화
+	void change();
+}
+
+/* 버튼 클래스1 */
+class SButton implements Click,Pressed{
+	// 메서드 재정의 강제성
+	public void click(){
+		System.out.println("버튼 클릭~~");
+	}
+	public void pressed(){
+		System.out.println("버튼 누름~~");
+	}
+}
+/* 버튼 클래스2 */
+interface IButton{ //추상화
+	void click();
+	void pressed();
+}
+public class Step03_multInterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SButton bt = new SButton();
+		bt.click();bt.pressed();
+		
+		//인터페이스 객체생성
+		IButton ib = new IButton(){
+			//2개 메서드 재정의
+			public void clock(){
+				System.out.println("click");
+			}
+			public void pressed(){
+				System.out.println("pressed");
+			}
+		};
+		ib.click();
+		ib.pressed();
+	}
+
+}

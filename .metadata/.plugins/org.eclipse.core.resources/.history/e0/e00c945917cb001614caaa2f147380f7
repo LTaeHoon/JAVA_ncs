@@ -1,0 +1,28 @@
+package sec06_inter;
+abstract class SuperA{ //추상클래스 : 부모클래스
+	int num1; //멤버변수
+	int calc(){ //멤버메서드
+		num1 +=10;
+		return num1;
+	}
+	abstract void display(); //본체 없음 : 추상 메서드
+}
+public class Step01_abstract {
+	/*
+	 *  추상클래스(Abstract class)
+	 *   1. 추상 메서드를 갖는 클래스
+	 *   2. 추상 메서드 : 본체가 없는 메서드
+	 *    형식) void method();
+	 *   3. abstract class 클래스명{ }
+	 *   4. 객체 생성 불가(추상 메서드 때문에)
+	 *   5. 상속으로 메서드 재정의 -> 객체 생성
+	 */
+	public static void main(String[] args) {
+		// 추상클래스의 객체 생성
+		//SuperA super = new SuperA(); Error 발생(객체 생성 불가(추상 메서드 때문에))
+		
+		
+
+	}
+
+}

@@ -1,0 +1,57 @@
+package sec05_Overriding;
+/*
+ * 문) 부모클래스를 상속받아서 Bird(새), Airplane(비행기)
+ * 	   자식클래스를 정의하여 메서드에 맞게 재정의 하시오.
+ * 		- 자식클래스 대상 객체 생성
+ *  	- 참조변수 이용 재정의한 메서드 호출
+ */
+class Flyer{ //부모클래스
+	void takeoff(){
+		System.out.println("이륙한다.");
+	}
+	void fly(){
+		System.out.println("비행한다.");
+	}
+	void land(){
+		System.out.println("착륙한다.");
+	}
+}
+class Bird extends Flyer{
+	void takeoff(){
+		System.out.println("새가 날개짓을 한다.");
+	}
+	void fly(){
+		System.out.println("새가 무리지어 비행한다.");
+	}
+	void land(){
+		System.out.println("새가 나무에 앉았다.");
+	}
+}
+class Airplane extends Flyer{
+	void takeoff(){
+		System.out.println("비행기가 소음을 내며 이륙한다.");
+	}
+	void fly(){
+		System.out.println("비행기가 상공 3000km 에서 비행한다.");
+	}
+	void land(){
+		System.out.println("비행기가 스페인 국제공항에 착륙한다.");
+	}
+}
+public class Step02_example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bird b = new Bird();
+		b.takeoff();
+		b.fly();
+		b.land();
+		
+		Airplane a = new Airplane();
+		a.takeoff();
+		a.fly();
+		a.land();
+		
+	}
+
+}

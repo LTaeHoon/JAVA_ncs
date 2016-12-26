@@ -1,0 +1,27 @@
+package sec05_Overriding;
+
+public class Step04_casting {
+	/*
+	 * 참조변수 형변환(casting)
+	 *  - 부모클래스와 자식클래스의 참조변수 간의 형변환
+	 *  1. 업 캐스팅
+	 *    - 자식클래스 -> 부모클래스
+	 *    - 묵시적 캐스팅 : 캐스팅 연산자 생략 가능
+	 *  2. 다운 캐스팅
+	 *    - 부모클래스 -> 자식클래스
+	 *    - 명시적 캐스팅 : 캐스팅 연산자 생략 불가능
+	 *    - 조건 : 사전에 업 캐스팅된 경우 가능
+	 */
+	public static void main(String[] args) {
+		//1. 부모 객체 생성
+		Flyer f = new Flyer();
+		//2. 자식 객체 생성
+		Bird b = new Bird();
+		Airplane a = new Airplane();
+		
+		System.out.println("***업 캐스팅***");
+		f = b;
+
+	}
+
+}

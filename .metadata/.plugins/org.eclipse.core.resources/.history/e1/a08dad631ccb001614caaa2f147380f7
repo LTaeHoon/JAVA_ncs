@@ -1,0 +1,29 @@
+package sec06_inter;
+
+interface Inter{
+	
+}
+public class Step02_interface {
+	/*
+	 * 인터페이스(interface)
+	 *  1. 완벽한 추상화 제공
+	 *  	- 모든 메서드는 추상메서드
+	 *  	  [public abstract] type 메서드명();
+	 *  	- 모든 변수는 상수
+	 *  	  [final] type 변수명 = 상수;
+	 *  2. 프로젝트 시 표준 규약 제공
+	 *  3. 객체 생성 불가능
+	 *  	-> 상속 -> 메서드 재정의 -> 객체 생성
+	 *  4. 다중 상속이 가능
+	 *  	-> 일반 클래스 :class 자식 extends 부모클래스{}
+	 *  	-> 인터페이스 : class 자식 implements 인터1,인터2{}
+	 *  5. 클래스의 모형을 갖는다.
+	 *  	-> 형식) interface 인터페이스명{}
+	 *  
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package sec05_Overriding;
+
+public class Step04_casting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

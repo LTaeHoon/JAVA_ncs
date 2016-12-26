@@ -13,4 +13,8 @@
 <fullyQualifiedTypeName name="model.MemberBean"/>
 <fullyQualifiedTypeName name="model.BoardBean"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="Step04_AccessOne.Super"/>
+<fullyQualifiedTypeName name="sec05_Overriding.Flyer"/>
+<fullyQualifiedTypeName name="java.util.concurrent.SynchronousQueue"/>
+<fullyQualifiedTypeName name="sec06_inter.IButton"/>
 </qualifiedTypeNameHistroy>

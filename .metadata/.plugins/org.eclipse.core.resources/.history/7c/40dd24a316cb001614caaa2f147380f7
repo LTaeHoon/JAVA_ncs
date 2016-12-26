@@ -1,0 +1,15 @@
+package sec06_inter;
+
+public class Step01_abstract {
+	/*
+	 *  추상클래스(Abstract class)
+	 *   1. 추상 메서드를 갖는 클래스
+	 *   2. 추상 메서드 : 본체가 없는 메서드
+	 *    형식) void method();
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

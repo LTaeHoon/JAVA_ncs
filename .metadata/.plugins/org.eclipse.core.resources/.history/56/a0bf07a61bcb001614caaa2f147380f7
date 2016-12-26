@@ -1,0 +1,17 @@
+package sec06_inter;
+
+public class Step02_interface {
+	/*
+	 * 인터페이스(interface)
+	 *  1. 완벽한 추상화 제공
+	 *  	- 모든 메서드는 추상메서드
+	 *  	  [public abstract] type 메서드명();
+	 *  	- 모든 변수는 상수
+	 *  	  [final] type 변수명 = 상수;
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

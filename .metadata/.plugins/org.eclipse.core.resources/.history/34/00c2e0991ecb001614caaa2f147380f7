@@ -1,0 +1,20 @@
+package sec06_inter;
+
+// 인터페이스 다중 상속
+interface Click{ //마우스 클릭
+	void click();
+}
+interface Pressed{ //마우스 누름
+	void pressed();
+}
+interface Change{ //상태변화
+	void change();
+}
+public class Step03_multInterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package Step04_AccessTwo;
+
+import Step04_AccessOne.Super;  //패키지명.클래스명
+
+public class Sub extends Super {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
