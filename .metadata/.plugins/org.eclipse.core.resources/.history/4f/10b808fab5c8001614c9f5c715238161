@@ -1,0 +1,40 @@
+package sec02_inheritance;
+
+class A{
+	int num = 10;//멤버변수
+	void display(){ //멤버메서드
+		System.out.println("a = "+a);
+	}
+}
+
+class B{
+	A a;  //B has a A (B는 A를 포함하고 있다)
+	B(A a){  //생성자 : A객체 주소를 주입
+		this.a =a;
+	}
+	
+	
+}
+public class Step03_is_has {
+	/*
+	 * java의 class 관계
+	 * 1. 상속관계
+	 * 	- is a
+	 *  - 단일 상속(하나의 부모로부터 상속 받을 수 있음) 
+	 *  - 예) 원은 도형이다. Circle(하위:특수) is a Shape(상위:일반).
+	 *  class Circle extends Shape{}
+	 *  
+	 * 2. 포함관계
+	 *  - has a
+	 *  - 예) 원은 점을 포함한다. Circle has a point.
+	 *   class Circle{
+	 *   	int score; //정수형 변수
+	 *   	Point p; //클래스 타입의 변수
+	 *   }
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package sec01_Static;
+
+public class Step02_static_method {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

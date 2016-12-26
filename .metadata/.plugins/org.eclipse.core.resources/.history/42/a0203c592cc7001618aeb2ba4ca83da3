@@ -1,0 +1,28 @@
+package sec02_Class;
+
+public class Step04_classType {
+
+	public static void change(){//원소 변경
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int []x ={1,2,3};
+		int []y ={10,20,30};
+		for(int i:x)
+			System.out.print(i+" ");
+		System.out.println();
+		for(int i:y)
+			System.out.print(i+" ");
+			
+		change(x,y);
+		
+		for(int i:x)
+			System.out.print(i+" ");
+		System.out.println();
+		for(int i:y)
+			System.out.print(i+" ");
+			
+	}
+
+}

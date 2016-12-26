@@ -1,0 +1,12 @@
+package model;
+/*
+ *  1. 멤버변수 : writer,title,content,date
+	 *    2. Setter/Getter
+ */
+public class BoardBean {
+	private String writer;
+	private String title;
+	private String content;
+	private String date;
+	
+}

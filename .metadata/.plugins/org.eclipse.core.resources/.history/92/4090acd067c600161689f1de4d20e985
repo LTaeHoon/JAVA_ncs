@@ -1,0 +1,17 @@
+package sec01_Method;
+
+public class Step09_exam_rename {
+	/*
+	 * 문) 키보드로 영문이름을 입력받아서 한글 이름으로 변환하는 메서드를
+	 * 	정의하시오.
+	 *  조건1) 키보드 입력(인원수는 3명 이내) : main()
+	 *  조건2) 한글 이름 변경 : rename()
+	 *  조건3) 출력
+	 */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package chap07_classII;
+class Employee{
+	private String name;
+	int pay;
+	
+	Employee(String name){
+		this.name = name;
+	}
+	String getName(){
+		return this.name;
+	}
+}
+public class class02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

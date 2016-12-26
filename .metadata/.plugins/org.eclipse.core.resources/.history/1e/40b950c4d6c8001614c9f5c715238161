@@ -1,0 +1,34 @@
+package chap07_classII;
+class Employee{
+	private String name;
+	int pay;
+	
+	Employee(String name){
+		this.name = name;
+	}
+	String getName(){
+		return this.name;
+	}
+}
+class Permanent extends Employee{
+	int pPay;
+	int bonus;
+	
+	Permanent(String name, int pPay,int bonus){
+		super(name);
+		this.pPay = pPay;
+		this.bonus = bonus;
+	}
+	
+}
+class Temporary extends Employee{
+	
+}
+public class class02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

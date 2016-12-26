@@ -1,0 +1,15 @@
+package sec01_Method;
+
+public class Step06_exam {
+	/*
+	 * 1. input() : 3개 과목점수 입력 (배열 저장)
+	 * 2. total() : 3개 과목점수의 총점
+	 * 3. avg() : 총점에 대한 평균
+	 * 	  모든 메서드는 main에서 호출
+	 */
+	public static void main(String[] args) {
+		
+
+	}
+
+}

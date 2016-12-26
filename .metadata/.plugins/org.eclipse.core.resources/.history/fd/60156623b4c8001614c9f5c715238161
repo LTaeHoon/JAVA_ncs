@@ -1,0 +1,78 @@
+package sec02_inheritance;
+
+class Car2{ //부모클래스
+	int cc;
+	int door;
+	String color="검정색";
+	
+	void display2(){
+		System.out.printf("cc : %d, door: %d, color: %s\n",
+				this.cc,this.door,this.color);
+	}
+}
+class Sonata2 extends Car2{ //자식클래스
+	/*부모 멤버*/
+	//int cc;
+	//int door;
+	//String color="검정색";
+	//display2(){}
+	
+	String color = "흰색"; 
+	// 동일한 변수명인 경우 자식클래스의 멤버가 우선순위가 높음
+	Sonata2(int cc,int door){ //객체 생성 + 초기화
+		this.cc = cc;
+		this.door = door;
+		//this.color = color;
+	}
+	
+	void display(){
+		System.out.printf("cc : %d, door: %d, color: %s\n",
+				cc,door,color); //현재 클래스 멤버
+		System.out.printf("cc : %d, door: %d, color: %s\n",
+				cc,door,this.color); //현재 클래스 멤버
+		System.out.printf("cc : %d, door: %d, color: %s\n",
+				cc,door,super.color); //부모 클래스 멤버
+		super.display2();
+	}
+}
+
+/*
+ * 문) 자식클래스2를 생성하시오.
+ * 	   클래스명 : Sonata3 (car2 클래스 상속)
+ * 	   색상 : 파랑색
+ * 	   display() 추가하여 결과 출력 : this, super 키워드 사용
+ *     
+ */
+class Sonata3 extends Car2{
+	/*부모 멤버*/
+	//int cc;
+	//int door;
+	//String color="검정색";
+	//display2(){}
+	String color = "파랑색";
+	Sonata3(int cc,int door){
+		this.cc = cc;
+		this.door = door;
+	}
+	void display(){
+		System.out.printf("cc : %d, door : %d, color : %s\n",this.cc,this.door,this.color);
+		System.out.printf("cc : %d, door : %d, color : %s\n",super.cc,super.door,super.color);
+	}
+}
+public class Step02_this_super {
+	/*
+	 * this vs super 키워드
+	 *  - this : 현재 클래스의 멤버 접근
+	 *    형식) this.멤버(변수,메서드)
+	 *  - super : 부모 클래스의 멤버 접근
+	 *    형식) super.부모멤버(변수,메서드)
+	 */
+	public static void main(String[] args) {
+		// Sonata2 객체 생성
+		Sonata2 s2 = new Sonata2(2500,4);
+		s2.display(); //cc : 2500, door: 4, color: 검정색
+		Sonata3 s3 = new Sonata3(2000,4);
+		s3.display();
+	}
+
+}

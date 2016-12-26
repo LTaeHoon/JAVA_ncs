@@ -1,0 +1,14 @@
+package sec01_Static;
+
+public class Step01_Static {
+	/*
+	 * 1. 인스턴스 멤버
+	 * 
+	 * 2. 클래스 멤버
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package sec03_Package_import;
+
+import model.MemberBean;
+
+public class Step02_member {
+
+	public static void main(String[] args) {
+		// MemberBean -> import
+		MemberBean bean = new MemberBean();
+		
+	}
+
+}

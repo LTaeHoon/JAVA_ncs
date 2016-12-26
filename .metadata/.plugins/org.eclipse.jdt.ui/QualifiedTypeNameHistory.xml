@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="sec01_Method.Step12_recursive"/>
+<fullyQualifiedTypeName name="sec02_Class.First"/>
+<fullyQualifiedTypeName name="sec01_Static.StaticB"/>
+<fullyQualifiedTypeName name="sec01_Static.StaticA"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="sec02_inheritance.Total"/>
+<fullyQualifiedTypeName name="model.MemberBean"/>
+<fullyQualifiedTypeName name="model.BoardBean"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+</qualifiedTypeNameHistroy>

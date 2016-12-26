@@ -1,0 +1,78 @@
+package chap07_classII;
+
+import java.util.Scanner;
+
+class Employee{
+	private String name;
+	int pay;
+	
+	Employee(String name){
+		this.name = name;
+	}
+	String getName(){
+		return this.name;
+	}
+}
+class Permanent extends Employee{
+	int pPay;
+	int bonus;
+	
+	Permanent(String name, int pPay,int bonus){
+		super(name);
+		this.pPay = pPay;
+		this.bonus = bonus;
+	}
+	void getPay(){
+		pay = pPay + bonus;
+		System.out.println("고용형태 : 정규직");
+		System.out.println("이름 : "+super.getName());	
+		System.out.printf("급여 : %,3d\n",pay);
+	}
+}
+class Temporary extends Employee{
+	int time;
+	int tPay;
+	
+	Temporary(String name, int time, int tPay){
+		super(name);
+		this.time = time;
+		this.tPay = tPay;
+	}
+	void getPay(){
+		pay = time*tPay;
+		System.out.println("고용형태 : 임시직");
+		System.out.println("이름 : "+super.getName());		
+		System.out.printf("급여 : %,3d\n",pay);
+	}
+	
+}
+public class class02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("고용형태- 정규직<P>,임시적<T>를 입력하세요");
+		char pt = sc.next().charAt(0);
+		if(pt=='P'||pt=='p'){
+			System.out.println("이름, 기본급, 보너스를 입력하세요.");
+			String name = sc.next();
+			int pPay = sc.nextInt();
+			int bonus = sc.nextInt();
+			Permanent p = new Permanent(name,pPay,bonus);
+			p.getPay();
+		}else if(pt=='T'||pt=='t'){
+			System.out.println("이름, 작업시간, 시간당 금여를 입력하세요.");
+			String name = sc.next();
+			int time = sc.nextInt();
+			int tPay = sc.nextInt();
+			Temporary t = new Temporary(name,time,tPay);
+			t.getPay();
+		}else{
+			System.out.println("고용형태를 잘못 입력했습니다.");
+		}
+		sc.close();
+		
+	}
+
+}

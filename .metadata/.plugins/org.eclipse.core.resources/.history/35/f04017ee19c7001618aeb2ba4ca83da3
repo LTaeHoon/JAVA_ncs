@@ -1,0 +1,17 @@
+package sec02_Class;
+
+public class Step01_class1 {
+	/*
+	 * 클래스(class)
+	 *  1. java는 클래스 단위로 프로그램 작성
+	 *  2. 클래스의 구성요소 : 멤버(member)
+	 *  3. 멤버 : 속성 + 기능
+	 *     -> 속성 : 멤버변수(저장)
+	 *     -> 기능 : 메서드
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

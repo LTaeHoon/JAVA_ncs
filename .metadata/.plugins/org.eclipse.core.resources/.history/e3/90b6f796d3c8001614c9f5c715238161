@@ -1,0 +1,22 @@
+package sec02_inheritance;
+
+class Super{
+	int num;
+	Super(int num){ //생성자 = 객체 + 초기화
+		this.num = num;
+	}
+}
+public class Step07_dummy {
+	/*
+	 * 더미 생성자
+	 *  - JVM에 의해서 생성된 생성자
+	 *  - 단지 객체 생성 역할
+	 *  - 개발자가 생성자를 생성하면 더미 생성자는 만들지 않음
+	 */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

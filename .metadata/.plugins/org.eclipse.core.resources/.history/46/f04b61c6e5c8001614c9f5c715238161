@@ -1,0 +1,23 @@
+package sec03_Package_import;
+
+import model.BoardBean;
+
+public class Step03_Board {
+	/*
+	 * 문) model 패키지에 BoardBean 클래스를 다음과 같이 설계 하시오.
+	 *    1. 멤버변수 : writer,title,content,date
+	 *    2. Setter/Getter
+	 *    
+	 */
+	public static void main(String[] args) {
+		// 1. 객체 생성
+		// 2. 참조변수 : 값 초기화(Setter)
+		// 3. 참조변수 : 값 확인(Getter)
+		BoardBean bbean = new BoardBean();
+		
+		bbean.setWriter("이순신");
+		bbean.setTitle("견적 뽑아주세요");
+		bbean.setDate("소형 SUV 구매할려고 하는데 괜찮은 영맨 있으면 소개해주세요.");
+	}
+
+}

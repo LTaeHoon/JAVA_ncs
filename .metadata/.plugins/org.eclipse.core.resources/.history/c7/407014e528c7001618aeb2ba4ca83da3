@@ -1,0 +1,22 @@
+package sec02_Class;
+
+/* TV 클래스 설계 */
+class TV{
+	//특징 : 색상(String), 전원(boolean), 채널(int)
+	String color;  // null
+	boolean power; // false
+	int channel;   // 0
+	
+	void display(){ //TV 상태 정보 출력
+		
+	}
+	
+}
+public class Step03_class3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

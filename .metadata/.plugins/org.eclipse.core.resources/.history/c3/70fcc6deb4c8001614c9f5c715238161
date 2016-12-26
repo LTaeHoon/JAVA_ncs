@@ -1,0 +1,17 @@
+package sec02_inheritance;
+
+public class Step03_is_has {
+	/*
+	 * java의 class 관계
+	 * 1. 상속관계
+	 * 	- is a 
+	 *  - 예) 원은 도형이다. Circle(하위:특수) is a Shape(상위:일반).
+	 * 2. 포함관계
+	 * 
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

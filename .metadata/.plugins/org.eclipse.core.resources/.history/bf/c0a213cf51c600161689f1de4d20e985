@@ -1,0 +1,31 @@
+package sec01_Method;
+
+public class Step02_param {
+	/*
+	 * 매개변수를 갖는 메서드 정의
+	 * 형식)
+	 * 리터타입 메서드명(자료형 변수1, 자료형 변수2,...){
+	 *  	메서드 실행문;
+	 *  }
+	 *  -매개변수와 실인수는 일치
+	 *   -> 개수, 타입, 순서
+	 */
+	public static void adder(int n1,int n2){
+		//int n1 = 10, n2=20; //지역변수
+		int sum = n1+ n2; //지역변수
+		System.out.printf("%d + %d = %d",n1,n2,sum);
+	}
+	
+	public static void subtracter(int n1,int n2){
+		//int n1 = 30, n2=20; //지역변수
+		int sub = n1- n2; //지역변수
+		System.out.printf("합계: %d",sub);
+	}
+	public static void main(String[] args) {
+		// adder() 메서드 호출
+		
+		adder(10,20); //10 + 20 =30
+		subtracter(20, 10);
+	}
+
+}

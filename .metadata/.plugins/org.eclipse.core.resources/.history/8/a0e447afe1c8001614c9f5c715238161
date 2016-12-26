@@ -1,0 +1,14 @@
+package sec03_Package_import;
+
+public class Step01_Package {
+	
+	/*
+	 * 패키지(Package) ?
+	 *  - 서로 연관성 있는 클래스를 하나로 묶어주는 역할  
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

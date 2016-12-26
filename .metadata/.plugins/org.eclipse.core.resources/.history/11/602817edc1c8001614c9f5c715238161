@@ -1,0 +1,30 @@
+package sec02_inheritance;
+
+class Point{ //부모클래스
+	int x;  // x좌표
+	int y;  // y좌표
+	Point(){ } // 기본생성자
+	Point(int x, int y){  //객체 생성 + 초기화
+		this.x =x;
+		this.y =y;
+	}
+}
+class Point3D extends Point {
+	
+}
+public class Step05_this_super2 {
+	/*
+	 * 1. super/super()
+	 * 	- super : 부모의 멤버 호출(접근)
+	 *  - super(): 부모의 생성자 호출
+ 	 *
+	 * 2. this/this()
+	 *  - this : 현재 클래스의 멤버 호출
+	 *  - this() : 현재 클래스의 또 다른 생성자 호출
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

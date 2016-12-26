@@ -20,11 +20,11 @@ public class class01 {
 			num[i] = sc.nextInt();
 		}
 		
-		int max=0,min=999;
+		int max=0,min=0;
 		for(int i=0;i<num.length;i++){
 			if(num[i]>max)
 				max = num[i];
-			if(num[i]<min)
+			if(i==0||num[i]<min)
 				min = num[i];
 		}
 		System.out.printf("Max값 : %d, min값 : %d",max,min);

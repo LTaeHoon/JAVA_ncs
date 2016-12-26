@@ -1,0 +1,41 @@
+package sec01_Method;
+
+import java.util.Scanner;
+
+public class Step11_exam_ann {
+	/*
+	 * 문) 인공신경망의 함수 정의하기(ver2)
+	 * 	1. 입력층 함수 : main() or input()
+	 *  2. 은닉층 함수 : hidden()
+	 *  3. 출력층 함수 : step(), sigmoid()
+	 */
+    public static int [] input(){
+    	Scanner sc = new Scanner(System.in);
+    	System.out.println("입력층 개수:");
+    	int size = sc.nextInt();
+    	int []input = new int[size];
+    	int []w = new int[size];
+    	for(int i=0;i<input.length;i++){
+    		System.out.println("입력");
+    		input[i] = sc.nextInt();
+    		if(i%2==0){
+    			w[i]=1;
+    		}else {
+    			w[i]=2;
+    		}
+    	}	
+    	return input;
+    }
+    public static void hidden(){
+    	
+    }
+	public static void main(String[] args) {
+		//
+		int []input=input();
+		System.out.println(input);
+		
+		
+		
+	}
+
+}

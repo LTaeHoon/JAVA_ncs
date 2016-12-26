@@ -1,0 +1,26 @@
+package sec01_Method;
+
+public class Step12_recursive {
+	/*
+	 * 재귀호출(recursive) 메서드 구현
+	 *  - 자기자신의 메서드를 호출하는 문법
+	 *  - 반복문의 역할 제공
+	 *  - 종료 조건 필요
+	 *  응용 : 팩토리얼 값 계산
+	 */
+	//n=5 -> 1+2+3+4+5 => 15(int)
+	public static int sum(int n) {
+		int result = 0;
+		if(n==1)
+			return 1;
+		else{
+			System.out.println("else");
+			return result;
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

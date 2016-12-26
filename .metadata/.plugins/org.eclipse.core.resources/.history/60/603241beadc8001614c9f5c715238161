@@ -1,0 +1,47 @@
+package sec02_inheritance;
+class Car{  //부모클래스
+	private int cc; //엔진
+	int door; //문짝
+	Car(){ } //기본 생성자
+	
+	//Setter : 지정자 메서드
+	void setCc(int cc){
+		this.cc = cc;
+	}
+	//Getter : 획득자 메서드
+	int getCc(){
+		return this.cc;
+	}
+}
+
+class Sonata extends Car { //자식클래스
+	/* 부모 멤버 : 4*/
+	//private int cc; //엔진
+	//int door; //문짝
+	//Setter()/Getter()
+	
+	String color; //자식 멤버:1
+	
+	void display(){
+		//cc: private 접근 지정자 이기 때문에 소나타 클래스에서 바로 접근 불가
+		System.out.printf("cc : %d, door : %d\n",getCc(),door);
+		System.out.printf("color : %s\n",color);
+	}
+}
+public class Step01_inher {
+	/*
+	 * 상속(Inheritance) ?
+	 *  - 기존의 클래스를 재사용하여 새로운 클래스를 생성하는 문법
+	 *  - 부모클래스의 모든 멤버를 상속받는다.
+	 *    -> 단, 생성자와 초기화 블럭 상속 제외
+	 *  - 자식클래스는 부모 멤버보다 같거나 크다.
+	 *  형식)
+	 *  class 자식클래스 extends 부모클래스 {  }   
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Sonata s = new Sonata();
+		s.display();
+	}
+
+}

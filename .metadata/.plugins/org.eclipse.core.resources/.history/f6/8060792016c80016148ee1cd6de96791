@@ -1,0 +1,27 @@
+package sec01_Static;
+class Student{
+	String name,major; //인스턴스 멤버
+	int sno; //학번 - 20160001,20160002, ... 2016000n
+	static int number = 20160000;
+	//인스턴스 초기화 블럭
+	{
+		++number; //20160001
+		sno = number;
+	}
+}
+public class Step04_inst_init {
+	/*
+	 * 인스턴스 초기화 블럭
+	 *  - 인스턴스 멤버 초기화
+	 *  - 클래스 멤버 초기화
+	 *  - 호출 시점 : 객체 생성시 호출
+	 *  - 생성자 이전에 호출되는 블럭
+	 *  
+	 */
+	public static void main(String[] args) {
+		// 첫번째 학생 생성
+		Student s1 = new Student(); // 1.초기화 블럭 호출 2.생성자 호출
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package sec02_inheritance;
+
+public class Step07_dummy {
+	/*
+	 * 더미 생성자
+	 *  - JVM에 의해서 생성된 생성자
+	 *  - 단지 객체 생성 역할 
+	 */
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

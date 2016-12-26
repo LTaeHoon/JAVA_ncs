@@ -1,0 +1,10 @@
+package sec02_inheritance;
+
+public class Step02_this_super {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

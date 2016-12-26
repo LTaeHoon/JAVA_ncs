@@ -1,0 +1,35 @@
+package sec02_Class;
+
+/*1. class 정의 */
+class First{ //start
+	int num; //멤버변수(전역변수: 해당 클래스 내 어디서든 쓸 수 있음)
+	
+	void display(){ //멤버메서드
+		int num2=100;  //지역변수
+		System.out.println("num = " + num);
+		System.out.println("num2 = "+ num2);
+	}
+}// class end
+
+public class Step01_class1 {
+	/*
+	 * 클래스(class)
+	 *  1. java는 클래스 단위로 프로그램 작성
+	 *  2. 클래스의 구성요소 : 멤버(member)
+	 *  3. 멤버 : 속성 + 기능
+	 *     -> 속성 : 멤버변수(저장) - 명사
+	 *     -> 기능 : 멤버 메서드(함수) - 동사
+  	 *	[형식]
+  	 *	[public] class 클래스명{ //시작
+  	 *		멤버변수;     // 클래스 특징 
+  	 *		멤버메서드(){ // 클래스 행위
+  	 *			실행문;
+  	 *		}
+  	 *	}//끝
+	 */ 
+	public static void main(String[] args) {
+		// 프로그램 시작점
+
+	}
+
+}

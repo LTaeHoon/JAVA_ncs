@@ -1,0 +1,22 @@
+package sec01_Method;
+
+public class Step04_return {
+/*
+ * - 리턴값 : 해당 메서드에서 처리한 결과를 반환하는 값
+ * 형식)
+ * 리턴타입 메서드(){
+ * 	실행문
+ *  return 값
+ *  }
+ *  void: 리턴값이 없는 경우 사용되는 키워드
+ */
+	public static int method1() {
+		System.out.println("method1 호출");
+		return 10;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

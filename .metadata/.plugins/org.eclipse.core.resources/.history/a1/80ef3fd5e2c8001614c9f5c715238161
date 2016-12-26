@@ -1,0 +1,23 @@
+package sec03_Package_import;
+
+import sec02_inheritance.Total;  //패키지명.클래스명
+import sec02_inheritance.*; //해당 패키지 내의 모든 클래스 사용가능 (패키지명.*)
+public class Step01_Package {
+	
+	/*
+	 * 패키지(Package) ?
+	 *  - 서로 연관성 있는 클래스를 하나로 묶어주는 역할
+	 *    -> 폴더와 유사(관련있는 파일의 묶음)
+	 *  - import 키워드 : 현재 클래스에서 다른 패키지의 클래스를
+	 *    사용하기 위해서는 반드시 임포트 해야한다.
+	 *    -> 동일 패키지인 경우에는 생략 가능    
+	 */
+	public static void main(String[] args) {
+		// 시작점
+		Total t = new Total();
+		//참조변수
+		int result = t.total(90,98); //메서드 호출
+		System.out.println("총점 ="+result);
+	}
+
+}
