@@ -1,0 +1,23 @@
+package exception;
+
+public class Step02_err2 {
+/*
+ * 예외발생 코드2
+ * - NullPointException
+ * - null값을 갖는 객체를 참조할 경우 발생
+ */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("프로그램 시작");
+		String str1 = "홍길동";
+		String str2 = null; //값이 없음
+		System.out.println("str1: "+str1);
+		System.out.println("str1:"+str2);
+		
+		System.out.println("str1길이"+str1.length()); //3
+		System.out.println("str2길이"+str2.length());
+		
+		System.out.println("프로그램 종료");
+	}
+
+}

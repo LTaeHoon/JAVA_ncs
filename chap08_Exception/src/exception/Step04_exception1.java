@@ -1,0 +1,20 @@
+package exception;
+
+public class Step04_exception1 {
+	public static void main(String[] args) {
+		// 1. try~ catch ~ finally 블럭
+		System.out.println("프로그램 시작");
+		try{
+			int num=10;
+			int num2=0;
+			int result = num/num2;//산술적 예외 발생(stop)
+			System.out.println("result ="+result);
+		}catch(ArithmeticException e){
+			System.out.println("예외발생~~");
+			System.out.println("예외정보 : "+e);
+		}
+		
+		System.out.println("프로그램 종료"); //실행(o)
+		
+	}
+}
