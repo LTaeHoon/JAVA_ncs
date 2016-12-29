@@ -1,0 +1,32 @@
+package sec02_util;
+
+import java.util.Locale;
+
+public class Step03_locale {
+	/*
+	 * 3. Locale 클래스
+	 *  - 다국어 처리 시 사용되는 클래스
+	 *  - 2개의 생성자 제공
+	 *   Locale(언어코드) //ko
+	 *   Locale(언어코드, 국가코드); //ko,KR
+	 *   
+	 */
+	public static void main(String[] args) {
+		// 언어코드, 국가코드 출력
+		System.out.println(Locale.KOREA); // ko_KR
+		System.out.println(Locale.JAPAN); // ja_JP
+		System.out.println(Locale.US);  //en_US
+		
+		// Locale 객체 생성
+		Locale loc = new Locale("ko","KR");
+		// 다국어 정보 출력
+		System.out.println(loc.getDisplayLanguage()); //한국어
+		System.out.println(loc.getDisplayCountry()); //대한민국
+		
+		//다국어 코드 출력
+		System.out.println(loc.getLanguage());  //ko
+		System.out.println(loc.getCountry());  //KR
+		
+	}
+
+}
