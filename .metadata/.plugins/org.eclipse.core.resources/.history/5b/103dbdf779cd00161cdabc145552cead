@@ -1,0 +1,41 @@
+package sec05_Inner;
+
+class Outer{
+	int outValue;
+	Inner in;
+	Outer(int outValue){
+		this.outValue = outValue;
+		in = new Inner(200);
+		in.display();
+	}
+	class Inner{
+		int inValue;
+		Inner(int inValue){
+			this.inValue = inValue;
+		}
+		void display(){
+			System.out.println("outValue : "+outValue);
+			System.out.println("inValue : "+inValue);
+		}
+	}// inner end
+}//outer end
+
+public class Step03_inner {
+	/*
+	 * 중첩클래스
+	 *  - 클래스 내에서 또 다른 클래스를 자신에 멤버로 선언하는 유형
+	 *  - 예) 성적처리 클래스 안에 성적 전담 클래스
+	 *  형식)
+	 *  class Outer{
+	 *  	Outer(){}
+	 *  	class Inner{
+	 *  		Inner(){}
+	 *  	}
+	 *  }
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

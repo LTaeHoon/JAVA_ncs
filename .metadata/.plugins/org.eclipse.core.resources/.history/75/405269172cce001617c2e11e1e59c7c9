@@ -1,0 +1,26 @@
+package sec01_generic;
+
+class Generic<T>{  // Type
+	T var;    //변수
+	T []arr;  //배열
+	void setVar(T var){  //변수 초기화
+		this.var = var;
+	}
+	void setArr(T []arr){ //배열 초기화
+		this.arr = arr;
+	}
+	void display(){
+		System.out.println("var :"+var);
+		for(T s : arr)
+			System.out.println("arr원소 :" +s);
+	}
+} //class end
+
+public class Step02_generic2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

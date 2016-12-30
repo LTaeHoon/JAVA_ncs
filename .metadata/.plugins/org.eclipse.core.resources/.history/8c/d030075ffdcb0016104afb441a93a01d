@@ -1,0 +1,46 @@
+package chap08;
+
+public class ProductData {
+	String [][]proTable=null;
+	ProductData(){
+		proTable = new String[3][2];
+		for(int i =0;i<proTable.length;i++){
+			for(int j=0;j<proTable[i].length;j++){
+				if(i==0&j==0){
+					proTable[i][j]="세탁기";
+				}
+				if(i==0&j==1){
+					proTable[i][j]="드럼 세탁기 최신형";
+				}
+				if(i==1&j==0){
+					proTable[i][j]="냉장고";
+				}
+				if(i==1&j==1){
+					proTable[i][j]="지펠 냉장고 최신형";
+				}
+				if(i==2&j==0){
+					proTable[i][j]="TV";
+				}
+				if(i==2&j==1){
+					proTable[i][j]="HDTV 150인치 모델";
+				}
+				
+			}
+			
+		}
+	}
+	
+	String search(String productName){
+		ProductData pd =new this();
+		String proName = productName;
+		
+		for(int i=0;proTable.length;i++){
+				if(proTable[i][1].equals(proName)){
+					
+				}
+			
+		}
+		
+	}
+	
+}

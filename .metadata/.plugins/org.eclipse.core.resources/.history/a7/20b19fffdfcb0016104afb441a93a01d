@@ -1,0 +1,15 @@
+package exception;
+
+public class Step09_multiException {
+	
+	/*
+	 * 다중 catch 문
+	 *  - 하나의 try 블럭에서 발생하는 예외를
+	 *    다중 catch 블럭으로 예외를 처리할 수 있다.
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

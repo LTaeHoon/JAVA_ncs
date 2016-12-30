@@ -1,0 +1,8 @@
+package com.mvc.controller;
+
+public class Controller {
+	/*
+	 * 1. View 요청 -> Model(DB)
+	 * 2. Model(DB) -> View 응답
+	 */
+}

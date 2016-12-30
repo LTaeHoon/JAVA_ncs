@@ -1,0 +1,20 @@
+package sec02_collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Step03_map {
+	/*
+	 * Map 계열 프레임워크 특징
+	 *  1. key:value 형식으로 저장
+	 *  2. key 중복불가, value 중복가능
+	 *  3. key를 통해서 데이터 접근
+	 *  4. Map 인터페이스의 클래스
+	 *   - hashMap,Hashtable,..
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Map<String, Integer> map = new HashMap<String, Integer>();
+	}
+
+}

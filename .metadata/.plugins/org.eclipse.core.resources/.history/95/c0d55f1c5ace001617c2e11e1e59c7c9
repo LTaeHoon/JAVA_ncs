@@ -1,0 +1,21 @@
+package chap10.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.mvc.model.Student;
+
+import chap10.model.MemberModel;
+
+public class MemberController {
+	public List<MemberModel> getList(){
+		List<MemberModel> list = new ArrayList<MemberModel>();
+		list.add(new MemberModel("hongid","1234","홍길동","서울시"));
+		list.add(new MemberModel("hongid","1234","홍길동","서울시"));
+		list.add(new MemberModel("hongid","1234","홍길동","서울시"));
+		list.add(new MemberModel("hongid","1234","홍길동","서울시"));
+		list.add(new MemberModel("hongid","1234","홍길동","서울시"));
+		
+		return list;
+	}
+}

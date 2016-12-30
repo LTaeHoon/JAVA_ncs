@@ -1,0 +1,17 @@
+package sec02_collection;
+
+public class Step02_set {
+	
+	/*
+	 * 2. Set 계열 컬렉션 프레임워크 특징
+	 *  1) 자료에 순서가 없다.(정렬 없음)
+	 *  2) 중복 데이터 허용 안함
+	 *  3) Set 인터페이스 자식 클래스이용 객체 생성
+	 *    - hashSet, TreeSet
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

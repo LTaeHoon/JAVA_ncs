@@ -1,0 +1,17 @@
+package sec03_wrapper;
+
+public class Step01_wrapper {
+	/*
+	 * 레퍼 클래스(Wrapper class)
+	 *  - 기본자료형(8)를 클래스 형태로 제공하는 것
+	 *    int    -> Integer
+	 *    long   -> Long
+	 *    float  -> Float
+	 *    double -> Double
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

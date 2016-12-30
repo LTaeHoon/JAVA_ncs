@@ -1,0 +1,15 @@
+package sec02_util;
+
+public class Step01_random {
+	/*
+	 * util 관련 패키지 소속 클래스
+	 *  1. Random 클래스
+	 *  2. Properties 클래스
+	 *  3. Locale 클래스
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

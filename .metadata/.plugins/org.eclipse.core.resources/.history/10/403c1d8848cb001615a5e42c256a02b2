@@ -1,0 +1,66 @@
+package chap07_classII;
+
+import java.util.Scanner;
+
+interface Shape{
+	public abstract float findArea();
+	
+}
+class Circle implements Shape{
+	int r;
+	Circle(int r){
+		this.r =r;
+	}
+	public float findArea(){
+		float area;
+		area = 3.14f*r*r;
+		return area;
+	}
+}
+class Rectangle implements Shape{
+	int w,h;
+	Rectangle(int w,int h){
+		this.w = w;
+		this.h= h;
+	}
+	public float findArea(){
+		float area;
+		area = w*h;
+		return area;
+	}
+	
+}
+
+public class class03 {
+
+	public static void main(String[] args) {
+		// 자식 클래스 호출
+		Scanner sc = new Scanner(System.in);
+		System.out.println("도형을 선택하세요.(1.원형, 2.사각형)");
+		System.out.print("도형선택->");
+		int sel = sc.nextInt();
+		if(sel ==1){
+			System.out.print("반지름 입력->");
+			int r=sc.nextInt();
+			Circle c = new Circle(r);
+			float result = c.findArea();
+			System.out.println("=============================");
+			System.out.printf("원의 넓이는 %.3f입니다\n",result);
+			
+		}else if(sel=2){
+			System.out.print("가로 입력->");
+			int w=sc.nextInt();
+			System.out.print("세로 입력->");
+			int h=sc.nextInt();
+			Rectangle r = new Rectangle(4,2);
+			int result2 =(int)r.findArea();
+			System.out.println("=============================");
+			System.out.printf("사각형의 넓이는 %d입니다.\n",result2);
+		}
+		
+		
+		
+	
+	}
+
+}

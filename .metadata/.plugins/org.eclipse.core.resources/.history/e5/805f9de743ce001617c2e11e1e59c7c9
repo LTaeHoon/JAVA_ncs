@@ -1,0 +1,19 @@
+package com.mvc.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.mvc.model.Student;
+
+public class Controller {
+	/*
+	 * 1. View 요청 -> Model(DB)
+	 * 2. Model(DB) -> View 응답
+	 */
+	
+	List<Student> list = new ArrayList<Student>();
+	// 학생 3명 객체 생성
+	Student s1 = new Student();
+	
+	
+}

@@ -1,0 +1,53 @@
+package sec02_collection;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.SynchronousQueue;
+
+public class Step04_collection_generic {
+	
+	/*
+	 * 사용자가 정의한 클래스를 이용하여
+	 * 제네릭 타입으로 지정한다.
+	 *  예) ArrayList<Integer>, ArrayList<String>
+	 *  cf) ArrayList<Student>
+	 */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Student>  list =new ArrayList<Student>();
+		
+		/*
+		 * list 객체 생성
+		 *  - Student 객체만 저장 자료구조
+		 */
+		Student st1 = new Student(2016001,"홍길동","국어국문","서울시");
+		list.add(st1); //첫번째 학생 객체 저장
+		// 두번째 학생 객체 저장
+		list.add(new Student(2016002,"이순신","해양학과","해남시"));
+		//세번쨰 학생 객체 저장
+		list.add(new Student(2016003,"유관순","가정교육","충남시"));
+		
+		// list 크기 확인
+		System.out.println("학생 수 : "+ list.size());
+		
+		// 3명 학생 정보 출력
+		/*
+		 * 학번  	 이름 	학번 	주소
+		 * 2016001,홍길동,국어국문,서울시
+		 * 2016002,이순신,해양학과,해남시
+		 * 2016003,유관순,가정교육,충남시
+		 */
+		System.out.println("학번\t이름\t학과\t주소");
+		for(Student s : list){
+			
+			System.out.print(s.getId()+"\t");
+			System.out.print(s.getName()+"\t");
+			System.out.print(s.getMajor()+"\t");
+			System.out.print(s.getAddress()+"\n");
+			
+		}
+}
+	
+
+}

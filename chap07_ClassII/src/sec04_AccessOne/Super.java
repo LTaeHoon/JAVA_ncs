@@ -1,4 +1,4 @@
-package Step04_AccessOne;
+package sec04_AccessOne;
 	/*
 	 * 접근지정자 권한
 	 *  - 접근지정자는 멤버(변수,메서드) 앞에 사용 

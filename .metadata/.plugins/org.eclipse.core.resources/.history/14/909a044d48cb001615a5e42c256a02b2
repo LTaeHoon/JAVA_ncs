@@ -1,0 +1,45 @@
+package chap07_classII;
+interface Shape{
+	public abstract float findArea();
+	
+}
+class Circle implements Shape{
+	int r;
+	Circle(int r){
+		this.r =r;
+	}
+	public float findArea(){
+		float area;
+		area = 3.14f*r*r;
+		return area;
+	}
+}
+class Rectangle implements Shape{
+	int w,h;
+	Rectangle(int w,int h){
+		this.w = w;
+		this.h= h;
+	}
+	public float findArea(){
+		float area;
+		area = w*h;
+		return area;
+	}
+	
+}
+
+public class class03 {
+
+	public static void main(String[] args) {
+		// 자식 클래스 호출
+		
+		Circle c = new Circle(5);
+		float result = c.findArea();
+		System.out.printf("원의 넓이는 %.3f입니다\n",result);
+		
+		Rectangle r = new Rectangle(4,2);
+		int result2 =(int)r.findArea();
+		System.out.printf("사각형의 넓이는 %d입니다.\n",result2);
+	}
+
+}

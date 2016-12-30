@@ -1,0 +1,39 @@
+package sec01_generic;
+
+class Generic<T>{  // Type
+	T var;    //변수
+	T []arr;  //배열
+	void setVar(T var){  //변수 초기화
+		this.var = var;
+	}
+	void setArr(T []arr){ //배열 초기화
+		this.arr = arr;
+	}
+	void display(){
+		System.out.println("var :"+var);
+		for(T s : arr)
+			System.out.println("arr원소 :" +s);
+	}
+} //class end
+
+public class Step02_generic2 {
+
+	public static void main(String[] args) {
+		// 1. StringType 객체 생성
+		Generic gc = new Generic<String>();
+		String name ="홍길동";
+		String []name2 ={"이순신","강감찬","유관순"};
+		gc.setVar(name);
+		gc.setArr(name2);
+		gc.display();
+		
+		// 2. IntegerType 객체 생성
+		Generic gc2 = new Generic<Integer>();
+		Integer num = 100;
+		Integer []num2 = {1000,2000,3000};
+		gc2.setVar(num);  //변수
+		gc2.setArr(num2); //배열
+		gc2.display();
+	}
+
+}

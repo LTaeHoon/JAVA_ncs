@@ -1,0 +1,17 @@
+package sec04_String;
+
+public class Step02_stringMethod {
+	/*
+	 * String 객체에서 제공하는 주요 메서드
+	 */
+	public static void main(String[] args) {
+		// 1. 문자 추출
+		String id = "123456-1234567";
+		char gender = id.charAt(7);
+		if(gender=='1'||gender=='3')
+			System.out.println("남자");
+		else
+			System.out.println("여자");
+	}
+
+}

@@ -7,6 +7,7 @@ class Data2{
 }
 
 public class Step04_classType {
+	
 	public static void change2(Data1 d1,Data2 d2){
 		int temp1 =0;
 	    temp1 = d1.x;

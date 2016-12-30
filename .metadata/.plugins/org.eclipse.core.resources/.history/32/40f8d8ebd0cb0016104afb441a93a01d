@@ -1,0 +1,27 @@
+package exception;
+
+/*
+ * 오류(Error)
+ *  - 컴파일(기계어 번역) 시점에서 발생하는 문법적 오류
+ *  예외(Exception)
+ *  - 실행(Run) 시점에서 발생하는 오류
+ *  - java에서는 예외처리 클래스 제공
+ *    -> 하드웨어(x), 소프트웨어(O)
+ */
+public class Step01_err1 {
+	/*
+	 * 예외코드1
+	 *  - 산술적 예외 : 0으로 나눈 경우
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("프로그램 시작");
+		int num = 10;
+		int num2 =0;
+		
+		int result = num/num2;  //산술적 예외 발생(stop)
+		
+		System.out.println("프로그램 종료");
+	}
+
+}

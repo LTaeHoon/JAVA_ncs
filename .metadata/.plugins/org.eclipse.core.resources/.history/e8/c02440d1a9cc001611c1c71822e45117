@@ -1,0 +1,17 @@
+package sec02_util;
+class LocalPro{
+	Locale loc;
+	Scanner sc;
+	String id,pwd;
+	LocalPro(){
+		
+	}
+}
+public class Step04_localeExam {
+
+	public static void main(String[] args) {
+		//
+
+	}
+
+}

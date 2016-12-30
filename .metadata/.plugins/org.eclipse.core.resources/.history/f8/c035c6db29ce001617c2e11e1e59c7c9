@@ -1,0 +1,27 @@
+package sec01_generic;
+
+
+class StringType{
+	String var;    //변수
+	String []arr;  //배열
+	void setVar(String var){  //변수 초기화
+		this.var = var;
+	}
+	void setArr(String []arr){ //배열 초기화
+		this.arr = arr;
+	}
+	void display(){
+		System.out.println("var :"+var);
+		for(String s : arr)
+			System.out.println("arr :" +s);
+	}
+}
+
+public class Step01_generic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package chap10.view;
+
+import chap10.controller.MemberController;
+
+public class MemberViewer {
+	
+	public static void main(String[] args) {
+		MemberController mc = new MemberController();
+		List<MemberModel> list=mc.getList();
+		
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package sec05_Inner;
+
+public class Step01_classType {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package sec02_util;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+class LocalPro{
+	Locale loc;
+	Scanner sc;
+	String id,pwd;
+	LocalPro(Locale loc, Scanner sc){
+		this.loc = loc;
+		this.sc = sc;
+	}
+}
+public class Step04_localeExam {
+
+	public static void main(String[] args) {
+		//
+
+	}
+
+}

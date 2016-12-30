@@ -1,0 +1,38 @@
+package chap07_classII;
+interface Shape{
+	public abstract float findArea();
+	
+}
+class Circle implements Shape{
+	int r;
+	Circle(int r){
+		this.r =r;
+	}
+	public float findArea(){
+		float area;
+		area = 3.14f*r*r;
+		return area;
+	}
+}
+class Rectangle implements Shape{
+	int w,h;
+	Rectangle(int w,int h){
+		this.w = w;
+		this.h= h;
+	}
+	public float findArea(){
+		float area;
+		area = w*h;
+		return area;
+	}
+	
+}
+
+public class class03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

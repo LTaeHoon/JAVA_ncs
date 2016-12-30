@@ -1,0 +1,11 @@
+package exception;
+
+public class Step08_checked {
+
+	public static void main(String[] args) {
+		// 2. checked 방식 : file, DB 입출력
+		
+
+	}
+
+}

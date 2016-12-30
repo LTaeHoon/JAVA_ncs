@@ -1,0 +1,14 @@
+package chap09;
+
+import java.util.regex.Pattern;
+
+import javax.swing.JOptionPane;
+
+public class Class01 {
+	static Pattern email_regEx = Pattern.compile("\\w{4,}@\\w{3,}.\\w{2,}"); 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JOptionPane.showInputDialog("이메일을 입력하세요.");
+	}
+
+}

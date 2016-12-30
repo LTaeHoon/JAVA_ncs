@@ -1,0 +1,17 @@
+package exception;
+
+import java.io.FileReader;
+
+public class Step08_checked {
+
+	public static void main(String[] args) {
+		// 2. checked 방식 : file, DB 입출력
+		
+		String fileName = "C:\\NCS\\test.txt";
+		FileReader file = new FileReader(fileName);
+		
+		
+		
+	}
+
+}

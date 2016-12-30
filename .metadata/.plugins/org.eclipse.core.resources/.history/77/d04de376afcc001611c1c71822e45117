@@ -1,0 +1,10 @@
+package sec03_wrapper;
+
+public class Step01_wrapper {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

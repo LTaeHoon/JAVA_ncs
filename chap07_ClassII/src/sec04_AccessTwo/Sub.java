@@ -1,6 +1,6 @@
-package Step04_AccessTwo;
+package sec04_AccessTwo;
 
-import Step04_AccessOne.Super;  //패키지명.클래스명
+import sec04_AccessOne.Super;
 
 /*
  * 클래스의 접근지정자

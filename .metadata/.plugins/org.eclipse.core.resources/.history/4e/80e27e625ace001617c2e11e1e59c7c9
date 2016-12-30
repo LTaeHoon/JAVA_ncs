@@ -1,0 +1,24 @@
+package chap10.view;
+
+import java.util.List;
+
+
+import chap10.controller.MemberController;
+import chap10.model.MemberModel;
+
+public class MemberViewer {
+	
+	public static void main(String[] args) {
+		MemberController mc = new MemberController();
+		List<MemberModel> list=mc.getList();
+		System.out.println("학번\t이름\t학과\t주소");
+		for(Member m : list){
+			System.out.print(s.getId()+"\t");
+			System.out.print(s.getName()+"\t");
+			System.out.print(s.getMajor()+"\t");
+			System.out.print(s.getAddress()+"\n");
+		}
+
+	}
+
+}

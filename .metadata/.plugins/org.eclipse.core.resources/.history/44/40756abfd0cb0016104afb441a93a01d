@@ -1,0 +1,18 @@
+package exception;
+
+/*
+ * 오류(Error)
+ *  - 컴파일(기계어 번역) 시점에서 발생하는 문법적 오류
+ *  예외(Exception)
+ *  - 실행(Run) 시점에서 발생하는 오류
+ *  - java에서는 예외처리 클래스 제공
+ *    -> 하드웨어(x), 소프트웨어(O)
+ */
+public class Step01_err1 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package sec01_object;
+
+public class Step02_toString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

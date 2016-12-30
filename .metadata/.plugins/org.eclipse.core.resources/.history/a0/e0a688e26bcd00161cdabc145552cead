@@ -1,0 +1,29 @@
+package sec04_String;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/*
+ * 정규표현식 관련 클래스
+ * 1. Pattern 클래스
+ * 	  형식) Pattern regEx = Pattern.compile("정규식패턴");
+ * 
+ * 2. Matcher 클래스
+ *    형식) Matcher m = regEx.matcher("문자열");
+ * 
+ */
+
+public class Step05_pattern {
+	static Pattern name_regEx = Pattern.compile("홍길2동");
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name ="이순신,강감찬,홍길동";
+		
+		Matcher m =name_regEx.matcher(name);
+	
+		System.out.println(m.find()); //true/false
+		System.out.println(m.group()); //검색 문자열
+	}
+
+}

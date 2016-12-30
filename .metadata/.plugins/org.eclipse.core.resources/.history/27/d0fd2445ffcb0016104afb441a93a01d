@@ -1,0 +1,19 @@
+package chap08;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		String product = sc.next();
+		ProductData pd = new ProductData();
+		JOptionPane jo = new JOptionPane();
+		jo.showInputDialog("검색할 상품명을 입력하세요.");
+		 pd.search(product);
+	}
+
+}

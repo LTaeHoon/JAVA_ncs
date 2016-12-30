@@ -1,0 +1,26 @@
+package sec02_collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Step04_collection_generic {
+	
+	/*
+	 * 사용자가 정의한 클래스를 이용하여
+	 * 제네릭 타입으로 지정한다.
+	 *  예) ArrayList<Integer>, ArrayList<String>
+	 *  cf) ArrayList<Student>
+	 */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Student>  list =new ArrayList<Student>();
+		
+		/*
+		 * list 객체 생성
+		 *  - Student 객체만 저장 자료구조
+		 */
+		Student st1 = new Student(2016001,"홍길동","국어국문","서울시");
+	}
+
+}

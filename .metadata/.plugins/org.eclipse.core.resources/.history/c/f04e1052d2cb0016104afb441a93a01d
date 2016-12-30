@@ -1,0 +1,21 @@
+package exception;
+
+import java.util.Scanner;
+
+public class Step03_err3 {
+	/*
+	 * 예외발생 코드3
+	 *  - 선언된 변수 타입과 일치하지 않은 경우 예외
+	 *  - java.util.InputMismatchException
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("정수 입력:");
+		int num = sc.nextInt();
+		
+		System.out.println("입력한 값" + num);
+	}
+
+}

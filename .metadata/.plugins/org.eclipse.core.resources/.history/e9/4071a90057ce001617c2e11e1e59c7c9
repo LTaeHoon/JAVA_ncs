@@ -1,0 +1,30 @@
+package chap10;
+
+import javax.swing.JOptionPane;
+
+public class ProductSearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Class02 pd = new Class02();
+		
+		String product=JOptionPane.showInputDialog("검색할 상품명을 입력하세요.");
+		String result=pd.search(product);
+		System.out.println(type(result));
+		try{
+			if(result.equals(null)){
+				System.out.println("asd");
+				throw new Exception("해당 상품이 없습니다.");
+			}
+			JOptionPane.showMessageDialog(null,result);	
+		}catch(Exception e){
+			JOptionPane.showMessageDialog(null,e.getMessage());	
+		}finally{
+			System.out.println("프로그램 종료");
+		}
+			
+		
+	}
+
+}

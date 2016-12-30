@@ -1,0 +1,51 @@
+package sec02_util;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+class LocalPro{
+	Locale loc;
+	Scanner sc;
+	String id,pwd;
+	LocalPro(Locale loc, Scanner sc){
+		this.loc = loc;
+		this.sc = sc;
+	}
+	
+	//다국어 처리 매서드
+	void multiLanguage(){
+		switch (loc.getLanguage()) {
+		case "ko": //한국어
+			System.out.println("한국어 메시지 출력");
+			System.out.print("아이디:");
+			id = sc.next();
+			System.out.print("비번:");
+			pwd = sc.next();
+			break;
+		case "en": //영어
+			System.out.println("English Message display");
+			System.out.println("id input :");
+			id = sc.next();
+			System.out.println("password input :");
+			pwd = sc.next();
+			break;
+		default:
+			System.out.println("처리할 수 없는 언어 입니다.");
+			break;
+		}
+	}
+}
+public class Step04_localeExam {
+
+	public static void main(String[] args) {
+		//
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("다국어를 선택하세요.(한국어:ko, 영어:en)");
+		String lan = sc.next();
+		Locale loc = new Locale(lan);
+		LocalPro lp = new LocalPro(loc,sc);
+		
+	}
+
+}

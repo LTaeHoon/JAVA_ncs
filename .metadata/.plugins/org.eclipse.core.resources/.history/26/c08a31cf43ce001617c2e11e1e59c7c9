@@ -1,0 +1,14 @@
+package com.mvc.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Controller {
+	/*
+	 * 1. View 요청 -> Model(DB)
+	 * 2. Model(DB) -> View 응답
+	 */
+	
+	List<Student> list = new ArrayList<Student>();
+	
+}

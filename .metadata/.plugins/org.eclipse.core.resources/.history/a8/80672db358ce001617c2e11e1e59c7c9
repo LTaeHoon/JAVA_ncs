@@ -1,0 +1,11 @@
+package chap10.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MemberController {
+	public void getList(){
+	List<MemberModel> list = new ArrayList<MemberModel>();
+	
+	}
+}

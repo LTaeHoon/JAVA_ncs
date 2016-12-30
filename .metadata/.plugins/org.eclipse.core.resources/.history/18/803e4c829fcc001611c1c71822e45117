@@ -1,0 +1,26 @@
+package sec01_Object;
+
+import java.util.Scanner;
+
+public class Step03_object2 {
+	/*
+	 * Object 클래스의 활용
+	 *  - java의 모든 클래스의 조상
+	 *  - 자바의 모든 객체는 Object 타입으로 저장
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("이름, 주소, 나이 입력");
+		/*String []info = new String[3];
+		info[0]= sc.next();
+		info[1]=sc.next();
+		info[2]=sc.nextInt();//Error
+		*/
+		Object []info = new Object[3];
+		info[0]= sc.next();
+		info[1]=sc.next();
+		info[2]=sc.nextInt();
+	}
+
+}

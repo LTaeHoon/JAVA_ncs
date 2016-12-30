@@ -1,0 +1,15 @@
+package sec02_collection;
+
+/*
+ * 컬렉션 프레임워크
+ *  1. 컬렉션 : 데이터 추가, 수정, 삭제, 검색 등을 
+ *     효과적으로 제공하는 자료구조 클래스
+ */
+public class Step01_list {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

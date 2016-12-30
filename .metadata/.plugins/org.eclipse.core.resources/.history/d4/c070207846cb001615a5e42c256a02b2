@@ -1,0 +1,21 @@
+package chap07_classII;
+interface Shape{
+	public abstract void findArea();
+	
+}
+class Circle implements Shape{
+	int r;
+	Circle(int r){
+		this.r =r;
+		
+	}
+}
+
+public class class03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

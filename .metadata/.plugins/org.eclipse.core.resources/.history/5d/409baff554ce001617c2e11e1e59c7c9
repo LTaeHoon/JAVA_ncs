@@ -1,0 +1,56 @@
+package chap10;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.concurrent.SynchronousQueue;
+
+class Score{
+	private int tot;
+	private float avg;
+	List<Integer> list;
+	Score(List<Integer> list){
+		this.list =list;
+	}
+	void tot(){
+		for(Integer li : list){
+			tot +=li;
+		}
+	}
+	void avg(){
+		avg = (float)tot/list.size();
+	}
+	public int getTot() {
+		return tot;
+	}
+	public void setTot(int tot) {
+		this.tot = tot;
+	}
+	public float getAvg() {
+		return avg;
+	}
+	public void setAvg(int avg) {
+		this.avg = avg;
+	}
+	
+	
+}
+public class Class01 {
+	public static void main(String[] args) {
+		List<Integer> list = new ArrayList<Integer>();
+		Score s = new Score(list);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("국어, 영어, 수학 점수를 입력하세요.");
+		System.out.print("국어 : ");
+		list.add(sc.nextInt());
+		System.out.print("영어 : ");
+		list.add(sc.nextInt());
+		System.out.print("수학 : ");
+		list.add(sc.nextInt());
+		s.tot();
+		s.avg();
+		System.out.println("=================================");
+		System.out.printf("과목점수 : 국어 : %d, 영어 : %d, 수학 : %d\n",list.get(0),list.get(1),list.get(2));
+		System.out.printf("총점 : %d, 평균 : %.2f",s.getTot(),s.getAvg());
+	}
+}

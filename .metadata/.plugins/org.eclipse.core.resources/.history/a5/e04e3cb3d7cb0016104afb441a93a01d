@@ -1,0 +1,25 @@
+package exception;
+
+import java.util.Scanner;
+
+public class Step06_exception3 {
+
+	public static void main(String[] args) {
+		// 문) Step03_err3 클래스의 예외를 try ~ catch 블럭을 이용하여 처리 하시오.
+		Scanner sc = new Scanner(System.in);
+		try{
+			System.out.println("정수 입력:");
+			int num = sc.nextInt();
+			System.out.println("입력한 값" + num);
+		}catch(InputMismatchException e){
+			System.out.println("에러발생");
+		    System.out.println("에러 정보:"+e);
+		}finally{
+			System.out.println("프로그램 종료");
+			sc.close();
+		}
+		
+		
+	}
+
+}

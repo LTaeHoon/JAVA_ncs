@@ -1,0 +1,16 @@
+package com.mvc.view;
+
+/*
+ * MVC 디자인 패턴
+ *  1. Model : 데이터 생성, 관리, 전송, DB 접근 객체
+ *  2. View : 일반 사용자에게 보여지는 페이지
+ *  3. Controller : View <-> Model를 연결해주는 역할
+ */
+public class Viewer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -42,6 +42,7 @@ public class Step02_interface {
 		// 자식클래스 객체 생성
 		SubInter sub = new SubInter();
 		sub.display1();sub.display2();
+		System.out.println(sub.NUM1);
 	}
 
 }

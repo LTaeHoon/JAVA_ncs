@@ -1,0 +1,16 @@
+package sec05_Inner;
+
+interface InterA{
+	int sum(int x,int y);
+	
+}
+public class Step02_lambda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		InterA inter = new InterA(){
+			
+		};
+	}
+
+}

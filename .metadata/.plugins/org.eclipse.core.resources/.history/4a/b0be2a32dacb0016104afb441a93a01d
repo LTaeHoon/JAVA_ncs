@@ -1,0 +1,27 @@
+package exception;
+
+public class Step07_unchecked {
+	/*
+	 * 소프트웨어적인 예외
+	 * 1. unchecked 방식
+	 *  - 컴파일 시점에서는 오류가 발생되지 않은 예외
+	 * 2. checked 방식
+	 *  - 컴파일 시점에서 오류가 발생되는 예외
+	 *  - 데이터 입출력 관련 프로그램(file,DB)
+	 */
+	public static void main(String[] args) {
+		// 1. unchecked 방식
+		
+		int []data = {10,20,30,40,50}; //data[0] ~ data[4]
+		for (int i=0;i<7;i++){ //0~6 :[5],[6]
+		try{	
+			System.out.println(data[i]);
+			
+		}catch(IndexOutOfBoundsException e){
+			System.out.println();
+		}
+		}
+
+	}
+
+}
