@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Real_Estate.Controller">
+   <children>
+      <ComboBox fx:id="gu" layoutX="25.0" layoutY="60.0" prefWidth="100.0">
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin>
+      </ComboBox>
+      <ComboBox fx:id="dong" layoutX="153.0" layoutY="60.0" prefWidth="100.0" />
+      <ComboBox fx:id="condition" layoutX="395.0" layoutY="60.0" prefWidth="100.0" />
+      <ComboBox fx:id="type" layoutX="275.0" layoutY="60.0" prefWidth="100.0" />
+      <ComboBox fx:id="deposit" layoutX="517.0" layoutY="60.0" prefWidth="140.0" />
+      <ComboBox fx:id="price" layoutX="675.0" layoutY="60.0" prefWidth="140.0" />
+      <TableView fx:id="tableView" layoutX="21.0" layoutY="134.0" prefHeight="230.0" prefWidth="543.0">
+        <columns>
+          <TableColumn prefWidth="50.0" text="코드" />
+          <TableColumn prefWidth="70.0" text="구" />
+            <TableColumn prefWidth="70.0" text="동" />
+            <TableColumn prefWidth="70.0" text="매물타입" />
+            <TableColumn prefWidth="70.0" text="거래조건" />
+            <TableColumn prefWidth="60.0" text="보증금" />
+            <TableColumn prefWidth="73.0" text="월세" />
+            <TableColumn prefWidth="73.0" text="가격" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imageView" fitHeight="230.0" fitWidth="240.0" layoutX="571.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="25.0" layoutY="34.0" text="매물 검색(서울특별시)" />
+      <Label layoutX="221.0" layoutY="108.0" text="매물 리스트" />
+      <Label layoutX="625.0" layoutY="108.0" text="매물 이미지" />
+      <Button fx:id="info" layoutX="495.0" layoutY="394.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="316.0" text="부동산 업체 정보" />
+      <Button fx:id="insert" layoutX="45.0" layoutY="394.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="203.0" text="매물 등록" />
+      <Button fx:id="delete" layoutX="260.0" layoutY="394.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="226.0" text="매물 삭제" />
+   </children>
+</AnchorPane>
