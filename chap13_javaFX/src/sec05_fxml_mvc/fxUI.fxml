@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" 
+      xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="sec05_fxml_mvc.Controller">
+   <children>
+      <Label layoutX="92.0" layoutY="26.0" text="상품 선택" />
+      <TableView fx:id="tableView" layoutX="42.0" layoutY="57.0" prefHeight="116.0" prefWidth="264.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="상품명" />
+          <TableColumn prefWidth="80.0" text="상품이미지" />
+        </columns>
+      </TableView>
+      <Label layoutX="361.0" layoutY="26.0" text="선택 상품" />
+      <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="80.0" layoutX="354.0" layoutY="60" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="previous" layoutX="132.0" layoutY="201.0" mnemonicParsing="false" text="이전" />
+      <Button fx:id="next" layoutX="219.0" layoutY="201.0" mnemonicParsing="false" text="다음" />
+      <Button fx:id="close" layoutX="300.0" layoutY="201.0" mnemonicParsing="false"  text="닫기" />
+   </children>
+</AnchorPane>
