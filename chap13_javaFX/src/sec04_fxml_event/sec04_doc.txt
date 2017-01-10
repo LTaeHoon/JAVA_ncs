@@ -1,0 +1,7 @@
+프로젝트 명 : chap13_javafx
+
+패키지명 : sec04_fxml_event
+     1. fxUI.fxml 작성 
+     2. Fxml_event.java 작성     
+     3. Controller.java
+     4. dialog.xml 작성 
