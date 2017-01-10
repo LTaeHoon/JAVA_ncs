@@ -1,0 +1,9 @@
+프로젝트 명 : chap13_javafx
+
+            
+패키지명 : sec03_fxml
+   - start() 메서드에서 1. 컨테이너 생성 ~ 3. 컨테이너에 컴포넌트 추가 내용을
+     SceneBuilder 도구 이용
+      
+     클래스명 : fxMain.fxml - xml을 이용하여 레이아웃(UI) 작성   
+            FxMain.java - fxMain.fxml 파일을 실행시키는 클래스 
