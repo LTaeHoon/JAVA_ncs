@@ -26,7 +26,7 @@ public class Step02_set {
 		
 		System.out.println(set.size()); //3
 		
-		//반복객체 생성
+		//반복객체 생성: set 계열은 인덱스를 못쓰기 때문에 iterator 객체 사용
 		Iterator<Integer> it = set.iterator();
 		while(it.hasNext()){ //원소 유무 판단 true/false
 			System.out.println(it.next()); //현재 원소 출력 -> 다음으로 넘어가라
