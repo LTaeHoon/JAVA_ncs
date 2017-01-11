@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="sec07.exam06_chart.RootController"
+<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="exam06_chart.RootController"
 	prefHeight="250" prefWidth="850" >
    <children>
       <PieChart fx:id="pieChart" />
